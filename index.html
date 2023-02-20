@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css link -->
-    <link rel="stylesheet" href="css/style.css">
     <!-- line Icons -->
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
     <!-- swiper js -->
-    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=sara" />
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- font  -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=alsarout" /> -->
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/mediaq.css">
     <title></title>
     
 </head>
@@ -23,7 +25,7 @@
          <nav class="nav container padd-15">
             <!-- logo -->
             <a href="index.html" class="nav-logo">
-                <h2>شهد المومني</h2>
+                <h2>شـهد المـومني</h2>
             </a>
             <!-- nav menu -->
             <div class="nav-menu" id="nav-menu">
@@ -72,7 +74,7 @@
                     <!-- image -->
                     <img src="./img/img.jpg" alt="">
                     <!-- end image -->
-                    <h1>شهد المومني </h1>
+                    <h1>شـهد المـومني </h1>
                     <span>أنا  <span class="text-intro">مطور ويب (واجهات امامية)</span></span>
                     <!-- social icon -->
                     <ul class="social-icons">
@@ -269,15 +271,131 @@
                           <div class="swiper-slide"><img src="./img/ser.jpg" alt=""></div>
                           <div class="swiper-slide"><img src="./img/ser.jpg" alt=""></div>
                           <div class="swiper-slide"><img src="./img/ser.jpg" alt=""></div>
-                          <div class="swiper-slide"><img src="./img/ser.jpg" alt=""></div>
+
                         </div>
                         <div class="swiper-pagination"></div>
                       </div>
                 </div>
             </div>
         </section>
+        <!-- === end feedback === -->
+        <!-- === contact === -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">تواصل معي</h2>
+                <div class="row">
+                    <!-- contact box -->
+                    <div class="contact-box padd-15">
+                        <div class="contact-data">
+                            <!-- contact information -->
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">تواصل عبر الواتس اب</h3>
+                                <span class="contact-descripition">
+                                    <i class="lni lni-whatsapp contact-icon"></i>
+                                    <a href="#" class="contact-text">00972778084911</a>
+                                </span>
+                            </div>
+                              <!-- contact information -->
+                              <div class="contact-information">
+                                <h3 class="contact-subtitle">تواصل عبر الانستقرام</h3>
+                                <span class="contact-descripition">
+                                    <i class="lni lni-instagram-original contact-icon"></i>
+                                    <a href="#" class="contact-text">شهد المومني</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- contact form -->
+                    <form class="contact-form padd-15">
+                        <div class="contact-inputs">
+                            <div class="contact-content">
+                                <input type="text" name="name" id="name" class="contact-input">
+                                <label for="" class="contact-label">الاسم</label>
+                                <span></span>
+                            </div>
+                            <div class="contact-content">
+                                <input type="text" name="subject" id="subject" class="contact-input">
+                                <label for="" class="contact-label">المـوضـوع</label>
+                                <span></span>
+                            </div>
+                            <div class="contact-content contact-area">
+                                <textarea  name="textarea " id="textarea" cols="30" rows="10" class="contact-input"></textarea>
+                                <label for="" class="contact-label">الرسالة</label>
+                                <span></span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-default">أرسل</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- === end contact === -->
+         <!-- === footer === -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-text padd-15">
+                    <p> Emad AlHashash &copy;</p>
+                </div>
+            </div>
+        </footer>
+        <!-- === end footer === -->
     </main>
+        <!-- === end main === -->
+         <!-- === theme customize === -->
+         <div class="customize-theme">
+            <div class="card">
+                <h2>تخصيص العرض الخاص بك</h2>
+                <p>أدراة حجم الخط و اللون و الخلفية</p>
+                <!-- font size -->
+                <div class="font-size">
+                    <h3>حجم الخط</h3>
+                    <div>
+                        <h6>أا</h6>
+                        <div class="choose-size">
+                            <span class="font-size-1"></span>
+                            <span class="font-size-2"></span>
+                            <span class="font-size-3 active"></span>
+                            <span class="font-size-4"></span>
+                        </div>
+                        <h3>أا</h3>
+                    </div>
+                </div>
+                <!-- color -->
+                <div class="color">
+                    <h3>اللـون</h3>
+                    <div class="choose-color">
+                        <span class="color-1"></span>
+                        <span class="color-2"></span>
+                        <span class="color-3 active"></span>
+                        <span class="color-4"></span>
+                        <span class="color-5"></span>
+                    </div>
+                </div>
+                 <!-- background -->
+                 <div class="background">
+                    <h3>الخلفية</h3>
+                    <div class="choose-bg">
+                        <div class="bg-1 active">
+                            <span></span>
+                            <h5 for="bg-1">ضوئي</h5>
+                        </div>
+                        <div class="bg-2">
+                            <span></span>
+                            <h5 for="bg-2">قاتم</h5>
+                        </div>
+                        <div class="bg-3">
+                            <span></span>
+                            <h5 for="bg-3">مظلم</h5>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!-- === end theme customize === -->
 
+       
 
     
 
