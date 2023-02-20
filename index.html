@@ -13,7 +13,6 @@
 
     <!-- css link -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="./css/mediaq.css">
     <title></title>
     
 </head>
@@ -50,6 +49,10 @@
                         <a href="#contact" class="nav-link">تواصل معي </a>
                     </li>
                 </ul>
+                 <!-- nav close -->
+                 <div class="nav-close" id="nav-close">
+                    <i class="lni lni-close"></i>
+                </div>
             </div>
             <!-- nav btn -->
             <div class="nav-btn">
@@ -174,8 +177,6 @@
                             <button type="button">تطريز</button>
                             <button type="button">رسم</button>
                             <button type="button">سناسل</button>
-                            <button type="button"></button>
-
                         </div>
                     </div>
                 </div>
@@ -400,7 +401,22 @@
     
 
       <!-- swiper js -->
+     
       <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script>
+       var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+      </script>
       <!-- js -->
       <script src="js/app.js"></script>
    

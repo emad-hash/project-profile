@@ -49,7 +49,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body,button,input,textarea{
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -189,6 +191,13 @@ transform: perspective(1px) translateZ(0);
 .nav-link:hover{
     color: var(--color-primary);
 }
+.nav-close{
+    font-size: 1rem;
+    position: absolute;
+    top: 1rem;
+    left: 1.25rem;
+    cursor: pointer;
+}
 .nav-btn{
     display: inline-flex;
     align-items: center;
@@ -199,6 +208,7 @@ transform: perspective(1px) translateZ(0);
     font-size: 1.15rem;
     cursor: pointer;
 }
+.nav-close,
 .nav-toggle{
     font-size: 1.2rem;
     cursor: pointer;
@@ -218,6 +228,9 @@ transform: perspective(1px) translateZ(0);
     border-radius: 50%;
 }
 
+.scroll-header{
+    box-shadow: 0 1px 4px rgba(165, 125, 125, 0.271);
+}
 /* End Nav */
 
 /* ======== Home ======== */
@@ -447,6 +460,7 @@ transform: perspective(1px) translateZ(0);
     text-align: center;
     line-height: 28px;
     transition: 0.3s;
+    opacity: 0;
 }
 .protfolio-item-inner:hover h3 , .protfolio-item-inner:hover span {
     opacity: 1;
@@ -717,3 +731,134 @@ transform: perspective(1px) translateZ(0);
     /* background-color: blue; */
  }
  /* === end theme customize ===  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* respo */
+ @media screen and (max-width:1200px){
+    .customize-theme .card{
+        width: 50vw;
+    }
+ }
+ @media screen and (max-width:992px){
+    :root{
+        --h1-font-size:1.75rem;
+        --h2-font-size:1.5rem;
+        --h3-font-size:1rem;
+        --normal-font-size:.938rem;
+        --small-font-size:.813rem;
+    }
+}
+@media screen and (max-width:968px){
+    .about-content,.about-img{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about-img{
+        text-align: center;
+        margin-bottom: var(--m-2-5);
+    }
+    .about-img img{
+        width: 400px;
+    }
+    .rounded{
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .services .service-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: var(--m-2-5);
+    }
+    .swiper{
+        flex: 0 0 80%;
+        max-width: 80%;
+        margin-bottom: var(--m-2-5);
+    }
+    .customize-theme .card{
+        width: 75vw;
+    }
+}
+@media screen and (max-width:840px){
+    body{
+        margin: var(--header-height) 0 0 0;
+    }
+    .container{
+        max-width: 591px;
+    }
+    .nav{
+        height: var(--header-height);
+    }
+    .nav-list{
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+    .nav-menu{
+        position: fixed;
+        background: var(--color-white);
+        width: 88%;
+        height: 100%;
+        top: 0;
+        left: 100%;
+        padding: 4rem  3rem 0 0 ;
+        box-shadow: 2px 0 4px var(--color-dark);
+        border-radius: 1rem  1rem ;
+        z-index: 100;
+        transition: .3s;
+    }
+    /* show menu */
+    .show-menu{
+        left:0;
+    }
+    .nav-close, .nav-toggle{
+        display: inline-flex;
+    }
+
+    .services .service-item , .about-content .about-text , .contact-data , .contact-form , .swiper{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: var(--m-2);
+    }
+    .protfolio-item h3{
+        font-size: 1.25rem;
+        margin: 0 0 0.58rem;
+        padding: 0 1rem;
+        text-align: center;
+        /* flex-flow: wrap; */
+    }
+    .swiper-slide img {
+        width: 300px;
+        height: 300px;
+        border-radius: var(--border-redius);
+    }
+    .protfolio-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width:576px){
+    .protfolio-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .protfolio-item-inner {
+        max-width: 380px;
+        margin: auto;
+    }
+    .customize-theme .card{
+        width: 96vw;
+    }
+    /* .scroll-down{
+        margin-top: var(--m-2-5);
+    } */
+}
