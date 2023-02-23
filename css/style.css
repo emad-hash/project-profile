@@ -343,7 +343,7 @@ margin-bottom: 10px;
 }
 .about-text p{
     text-align: justify;
-    margin-bottom: var(--m-1);
+    margin-bottom: var(--m-2);
 }
 .about-content .skills .skill-item {
     flex: 0 0 100%;
@@ -782,7 +782,8 @@ margin-bottom: 10px;
     }
 }
 @media screen and (max-width:968px){
-    .about-content,.about-img{
+    .about-content,
+    .about-img{
         flex: 0 0 100%;
         max-width: 100%;
     }
@@ -798,21 +799,17 @@ margin-bottom: 10px;
         margin-right: 0;
     }
     .services .service-item {
-        flex: 0 0 50%;
-        max-width: 50%;
+        flex: 0 0 40%;
+        max-width: 40%;
         margin-bottom: var(--m-2-5);
-    }
-    .swiper{
-        flex: 0 0 80%;
-        max-width: 80%;
-        margin-bottom: var(--m-2-5);
+        margin: auto;
     }
     .customize-theme .card{
         width: 75vw;
     }
-    .btn-default{
+    /* .btn-default{
         margin-bottom: 50px;
-    }
+    } */
 }
 @media screen and (max-width:840px){
     body{
@@ -849,10 +846,16 @@ margin-bottom: 10px;
         display: inline-flex;
     }
 
-    .services .service-item , .about-content .about-text , .contact-data , .contact-form , .swiper{
+    .contact-data , .contact-form {
         flex: 0 0 100%;
         max-width: 100%;
         margin-bottom: var(--m-2);
+    }
+    .services .service-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        /* margin-bottom: var(--m-2-5); */
+        margin: auto;
     }
     .protfolio-item h3{
         font-size: 1.25rem;
@@ -861,18 +864,16 @@ margin-bottom: 10px;
         text-align: center;
         /* flex-flow: wrap; */
     }
-    .swiper-slide img {
-        width: 300px;
-        height: 300px;
-        border-radius: var(--border-redius);
-    }
+  
     .protfolio-item{
         flex: 0 0 50%;
         max-width: 50%;
     }
-    .btn-default{
-        margin-bottom: 150px;
+    .service-item .service-item-inner {
+        margin: 15px;
+        width: 100%;
     }
+
 }
 @media screen and (max-width:576px){
     .protfolio-item{
@@ -886,7 +887,29 @@ margin-bottom: 10px;
     .customize-theme .card{
         width: 96vw;
     }
-    .btn-default{
+    /* .btn-default{
         margin-bottom: 150px;
+    } */
+    .about-content .about-text ,
+    .about-content .skills {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
+    .services .service-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        /* margin-bottom: var(--m-2-5); */
+        margin: auto;
+    }
+    .service-item .service-item-inner {
+        margin: 15px;
+        width: 100%;
+    }
+    .protfolio .protfolio-filter button {
+        margin: 0 var(--m-1);
+    }
+    .footer{
+        padding: 20px 0;
+    }
+    
 }
